@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/title_text"
+            android:text="Ryan Potsander"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:paddingTop="8dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="Google Certified Android Developer"/>
+
+        <LinearLayout
+            android:id="@+id/social_links"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_below="@+id/title">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp"
+                android:src="@drawable/ic_android_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/card_subtext"
+                android:text="Associate Android Developer Mark"/>
+
+        </LinearLayout>
+
+        <!-- skills -->
+        <LinearLayout
+            android:id="@+id/section_skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:layout_below="@+id/social_links">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/card_primary_text"
+                android:text="Skills"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+        <!-- employment -->
+        <LinearLayout
+            android:id="@+id/section_employment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/section_skills">
+
+            <TextView
+                android:id="@+id/employment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/card_primary_text"
+                android:text="Employment"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_employment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- education -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_below="@+id/section_employment"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/education_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/title_text"
+                android:text="Education"/>
+
+            <TextView
+                android:id="@+id/education_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="North High School" />
+
+            <TextView
+                android:id="@+id/education_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fall 1995 - Summer 1999"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/card_subtext"
+                android:text="Diploma"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

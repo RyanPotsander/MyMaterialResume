@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Material Resume</string>
+    <string name="app_label">Ryan Potsander</string>
+    <string name="sub_label">Android Developer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Morbi vel posuere neque, ut ornare purus. Nulla condimentum sem vel feugiat luctus. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. </string>
+</resources>
